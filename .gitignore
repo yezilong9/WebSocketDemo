@@ -1,0 +1,13 @@
+/target/
+.idea/*
+/.idea
+.project
+*.iml
+/logs/reader-api.*
+*.DS_Store
+.classpath
+logs/*
+.settings/**
+/.settings
+/.classpath
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>[reader-api] %d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</Pattern>
+        </encoder>
+    </appender>
+    <!-- name值可以是包名或具体的类名：该包（包括子包）下的类或该类将采用此logger -->
+    <logger name="com.yz.socket" level="info"/>
+    <logger name="io.netty" level="info"/>
+    <!-- root的默认level是DEBUG -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
